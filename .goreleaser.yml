@@ -21,20 +21,6 @@ archives:
     windows: Windows
     386: i386
     amd64: x86_64
-dockers:
-- builds:
-  - stok-operator
-  binaries:
-  - stok-operator
-  goos: linux
-  goarch: amd64
-  image_templates:
-  - "leg100/stok-operator:latest"
-  - "leg100/stok-operator:{{ .Tag }}"
-  skip_push: auto
-  dockerfile: build/Dockerfile
-  extra_files:
-    - build/bin
 checksum:
   name_template: 'checksums.txt'
 snapshot:
