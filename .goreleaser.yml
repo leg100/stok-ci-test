@@ -5,6 +5,8 @@ builds:
   - id: stok
     env:
     - CGO_ENABLED=0
+    targets:
+    - linux_amd64
   - id: stok-operator
     binary: stok-operator
     env:
